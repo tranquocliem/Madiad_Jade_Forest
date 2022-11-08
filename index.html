@@ -17,7 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./fontawasome-6/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>Jade Forest Captial</title>
 </head>
@@ -29,7 +31,7 @@
             <nav role="navigation" class="navigation">
                 <ul>
                     <li><a class="nav-link" href="#home" data-content="The beginning">Home</a></li>
-                    <li><a class="nav-link" href="#blog" data-content="Curious?">Blog</a></li>
+                    <li><a class="nav-link" href="#intro" data-content="Curious?">Intro</a></li>
                     <li><a class="nav-link" href="#portfolio" data-content="I got game">Portfolio</a></li>
                     <li><a class="nav-link" href="#contact" data-content="Only the finest">Contact</a></li>
                     <li><a class="nav-link" href="#terms" data-content="Don't hesitate">Terms</a></li>
@@ -68,14 +70,24 @@
         </section>
         <!-- End Home -->
 
-        <!-- Blog -->
-        <section class="section" id="blog">
+        <!-- Intro -->
+        <section class="section" id="intro">
             <div class="section-content">
                 <img class="section-logo" src="./img/Logo-White.svg" alt="">
                 <div class="section-title">
                     <h2>
-                        BLOG
+                        INTRO
                     </h2>
+                </div>
+                <div class="section-text">
+                    <h3>Cung cấp giải pháp marketing và branding cho doanh nghiệp</h3>
+                    <p>Madiad ứng dụng các công cụ, phần mềm và sự sáng tạo để xây dựng thương hiệu với mục tiêu nâng
+                        cao hiệu quả kinh doanh của khách hàng.Madiad được thành lập vào năm 2020 và đặt trụ sở
+                        văn phòng đại diện tại Georgia, Mỹ. Công ty Madiad sở hữu các mạng lưới tổ chức chính phủ và
+                        phi chính phủ, những dự án cộng đồng và blockchain.<br><br>Chúng tôi hỗ trợ các doanh nghiệp sản
+                        xuất các chiến dịch truyền thông trong các lĩnh vực như GameFi, Metaverse, Crypto, NFT, v.v.
+                        Thông qua các giải pháp marketing mang tính sáng tạo đột phá, đội ngũ Madiad không chỉ mang đến
+                        sự hiệu quả mà còn giúp nâng cao trải nghiệm của khách hàng.</p>
                 </div>
                 <div class="section-frame">
                     <img class="frame1-a" src="./img/frame1-a.svg" alt="">
@@ -89,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <!-- End Blog -->
+        <!-- End Intro -->
 
         <!-- PORTFOLIO -->
         <section class="section" id="portfolio">
@@ -99,6 +111,90 @@
                     <h2>
                         PORTFOLIO
                     </h2>
+                </div>
+                <div class="work_container container grid swiper">
+                    <div class="swiper-wrapper">
+                        <div class="word_card app swiper-slide">
+                            <img src="img/medic.png" alt="tts" class="work_img">
+                            <h3 class="work_title">Thiết Kế Website</h3>
+                            <span class="work_button">Xem
+                                <i class="work_button-icon"><i class="fa-solid fa-arrow-right"></i></i>
+                            </span>
+                            <div class="project_item-details">
+                                <h3 class="details_title">Website Blog Về Chủ Đề Địa Lý, Văn Hóa - Xã Hội, Du Lịch.</h3>
+                                <p class="details_description">
+                                    Các chuyên mục mà TheGeoMedic thường viết: địa lý tự nhiên, văn hóa - xã hội, những
+                                    hiện tượng thú vị và kỳ lạ, ngoài ra sẽ luôn cập nhật tin tức địa lý mới nhất cùng
+                                    những kiến thức địa lý cơ bản.
+                                </p>
+                                <ul class="details_info">
+                                    <li>Đã đăng - <span>2021</span></li>
+                                    <li>Công nghệ - <span>Wordpress</span></li>
+                                    <li>Thực Hiện - <span>Team Web Madiad</span></li>
+                                    <li>Trang thái - <span>Đã Hoàn Thành</span></li>
+                                    <li>Xem thêm - <span>
+                                            <a target="_blank" href="https://thegeomedic.com/">https://thegeomedic.com
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="word_card app swiper-slide">
+                            <img src="img/hero.png" alt="tts" class="work_img">
+                            <h3 class="work_title">Thiết Kế Video</h3>
+                            <span class="work_button">Xem
+                                <i class="work_button-icon"><i class="fa-solid fa-arrow-right"></i></i>
+                            </span>
+                            <div class="project_item-details">
+                                <h3 class="details_title">Thiết Kế Video Giới Thiệu Cho Game HeroTD</h3>
+                                <p class="details_description">Heroes TD là một trong những tựa game thủ thành (Tower
+                                    Defense) Play2earn đầu tiên được ra mắt thị trường gamefi. Thủ thành (Tower Defense)
+                                    là một dạng game chiến lược thuộc thể loại sub-genre, nơi người chơi cần phải bảo vệ
+                                    lãnh thổ của mình khỏi kẻ thù xâm lược.
+                                </p>
+                                <ul class="details_info">
+                                    <li>Đã đăng - <span>27 thg 12, 2021</span></li>
+                                    <li>Công nghệ - <span>Đang Cập Nhật</span></li>
+                                    <li>Thực Hiện - <span>Team Designer Madiad</span></li>
+                                    <li>Trang thái - <span>Đã Hoàn Thành</span></li>
+                                    <li>Xem thêm - <span>
+                                            <a target="_blank"
+                                                href="https://youtu.be/JbTjPe6EZwQ">https://youtu.be/JbTjPe6EZwQ
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="word_card app swiper-slide">
+                            <img src="img/bami.png" alt="tts" class="work_img">
+                            <h3 class="work_title">Thiết Kế Ấn Phẩm</h3>
+                            <span class="work_button">Xem
+                                <i class="work_button-icon"><i class="fa-solid fa-arrow-right"></i></i>
+                            </span>
+                            <div class="project_item-details">
+                                <h3 class="details_title">Thiết Kế Ấn Phẩm Ấn Phẩm Cho Nền Tảng Tài Chính Bami</h3>
+                                <p class="details_description">Bami là một nền tảng tài chính đa chuỗi cung cấp các giải
+                                    pháp tiền đề cho người dùng bằng cách ứng dụng công nghệ blockchain. Hệ sinh thái
+                                    Bami mang đến nhiều tiện ích như gửi tiết kiệm, thanh toán, giao dịch, vốn ngắn hạn,
+                                    v.v.
+                                </p>
+                                <ul class="details_info">
+                                    <li>Đã đăng - <span>2021</span></li>
+                                    <li>Công nghệ - <span>Đang Cập Nhật</span></li>
+                                    <li>Thực hiện - <span>Madiad</span></li>
+                                    <li>Trang thái - <span>Đã Hoàn Thành</span></li>
+                                    <li>Xem thêm - <span>
+                                            <a target="_blank" href="https://bami.money/">https://bami.money
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <div class="section-frame">
                     <img class="frame1-a" src="./img/frame1-a.svg" alt="">
@@ -114,6 +210,39 @@
         </section>
         <!-- End PORTFOLIO -->
 
+        <!-- Portfolio Popup -->
+        <div class="project_popup">
+            <div class="project_popup-inner">
+                <div class="project_popup-content grid">
+                    <span class="project_popup-close">
+                        <i><i class="fa fa-times"></i></i>
+                    </span>
+                    <div class="pp_thumbnail">
+                        <img src="img/hero.png" alt="" class="project_popup-img">
+                    </div>
+                    <div class="project_popup-info">
+                        <div class="project_popup-subtitle">Thông Tin - <span>Chi Tiết</span></div>
+                        <div class="project_popup-body">
+                            <h3 class="details_title">Cẩm Nang Máy Tính & Kiến Thức Công Nghệ</h3>
+                            <p class="details_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Deleniti ipsa, nesciunt accusantium delectus voluptates iure.</p>
+                            <ul class="details_info">
+                                <li>Đã đăng - <span>26 thg 12, 2021</span></li>
+                                <li>Vai trò - <span>Người Thực Hiện</span></li>
+                                <li>Trang thái - <span>Đang Thực Hiện</span></li>
+                                <li>Xem thêm - <span>
+                                        <a target="_blank"
+                                            href="https://tinyurl.com/cnmt-it">https://tinyurl.com/cnmt-it
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio Popup -->
 
         <!-- CONTACT US -->
         <section class="section" id="contact">
@@ -124,6 +253,75 @@
                         CONTACT US
                     </h2>
                 </div>
+
+                <div class="section-text">
+                    <h3>
+                        Hãy Liên Hệ Với Chung Tôi, Và Đặt Ra Những Câu Hỏi?
+                    </h3>
+                </div>
+
+                <div class="btn-contact_open">
+                    <button type="submit" class="btn hire-me"><span>Đặt Câu Hỏi</span>
+                        <div class="liquid"></div>
+                    </button>
+                </div>
+
+                <div class="contact_popup">
+                    <div class="contact_popup-inner">
+                        <div class="contact_popup-content grid">
+                            <span class="contact_popup-close">
+                                <i><i class="fa fa-times"></i></i>
+                            </span>
+                            <form id="my-form" action="https://formsubmit.co/3217e5e90ed377b9dc274f02ebe42660"
+                                method="POST" class="contact-form">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input name="Họ và Tên" type="text" class="form-control"
+                                                placeholder="Họ và Tên" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input name="E-mail" type="email" class="form-control" placeholder="E-mail"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input name="Tiêu Đề" type="text" class="form-control" placeholder="Tiêu Đề"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea spellcheck="false" name="Lời Nhắn" id="" class="form-control"
+                                                placeholder="Lời Nhắn" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="position-btn">
+                                            <button type="submit" class="btn hire-me"><span>Gửi Mail</span>
+                                                <div class="liquid"></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_next" value="https://tranquoclieminfo.tk/sendmail.html">
+                                <input type="hidden" name="_autoresponse"
+                                    value="Đợi Liêm xíu nha, Liêm sẽ phản hồi bạn sớm nhất có thể.">
+                                <input type="hidden" name="_template" value="box">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="section-frame">
                     <img class="frame1-a" src="./img/frame1-a.svg" alt="">
                     <img class="frame1-b" src="./img/frame1-b.svg" alt="">
@@ -148,6 +346,130 @@
                         Terms of Use
                     </h2>
                 </div>
+
+                <div class="services_container container grid swiper">
+                    <div class="swiper-wrapper">
+                        <div class="services_content swiper-slide">
+                            <div>
+                                <i class="services_icon"><i class="fa-solid fa-share-nodes"></i></i>
+                                <h3 class="services_title">SMM <br> Social Media Marketing</h3>
+                            </div>
+
+                            <span class="services_button">
+                                Xem Thêm <i class="services_button-icon"><i class="fa fa-arrow-right"></i></i>
+                            </span>
+                        </div>
+
+                        <div class="services_content swiper-slide">
+                            <div>
+                                <i class="services_icon"><i class="fa-solid fa-swatchbook"></i></i>
+                                <h3 class="services_title">Booking <br> KOLs,
+                                    Influencers</h3>
+                            </div>
+
+                            <span class="services_button">
+                                Xem Thêm <i class="services_button-icon"><i class="fa fa-arrow-right"></i></i>
+                            </span>
+                        </div>
+
+                        <div class="services_content swiper-slide">
+                            <div>
+                                <i class="services_icon"><i class="fa fa-window-maximize"></i></i>
+                                <h3 class="services_title">Thiết Kế <br> Website</h3>
+                            </div>
+
+                            <span class="services_button">
+                                Xem Thêm <i class="services_button-icon"><i class="fa fa-arrow-right"></i></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class="services_modal-close"><i class="fa fa-times"></i></i>
+
+                            <h3 class="services_modal-title">Social Media Marketing</h3>
+                            <p class="services_modal-description">SMM của Madiad là sự kết hơp giữa phân tích, lên kế
+                                hoạch và quảng bá thương hiệu để tạo ra sức kết nối hiệu quả trong cộng đồng khách hàng
+                                tiềm năng.</p>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Tăng tương tác Facebook, Telegram.</p>
+                                </li>
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Seeding.</p>
+                                </li>
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Quảng cáo trả phí.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class="services_modal-close"><i class="fa fa-times"></i></i>
+
+                            <h3 class="services_modal-title">Booking KOLs,
+                                Influencers</h3>
+                            <p class="services_modal-description">Liên hệ booking trực tiếp với các KOLs, Influencers
+                                trong nước và quốc tế mà không qua bất kỳ kênh trung gian nào. Bên cạnh đó kết nối
+                                với các Influencers, KOLs phù hợp để cùng nhau xây dựng định hướng chung tiếp cận đến
+                                cộng đồng khách hàng trên nền tảng công nghệ số hiện đại.</p>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Hỗ Trợ KOLs Ở Nhiều Lĩnh Vực (giải trí, thể thao,
+                                        ngôi sao mxh, ...).
+                                    </p>
+                                </li>
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Dự trù kinh phí.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class="services_modal-close"><i class="fa fa-times"></i></i>
+
+                            <h3 class="services_modal-title">Thiết Kế Webiste</h3>
+                            <p class="services_modal-description">Ở Madiad chúng tôi luôn đem lại những website có giao
+                                diện đẹp, hài hòa và hợp với thời đại, nhằm đem lại những website tốt từ giao diện đến
+                                trải nghiệm khi sử dụng.</p>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Thiết kế website theo mong muốn và yêu cầu từ khách
+                                        hàng.</p>
+                                </li>
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Lựa chọn tên miền website và hosting.
+                                    </p>
+                                </li>
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Xây dựng website và nội dung website.
+                                    </p>
+                                </li>
+                                <li class="services-modal-service">
+                                    <i class="services_modal-icon"><i class="fa fa-check-circle"></i></i>
+                                    <p class="services_modal-info">Sửa theo phản hồi và bảo trì
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="section-frame">
                     <img class="frame1-a" src="./img/frame1-a.svg" alt="">
                     <img class="frame1-b" src="./img/frame1-b.svg" alt="">
@@ -168,6 +490,8 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./fontawasome-6/js/all.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/scrollreveal.js"></script>
     <script src="./js/script.js"></script>
 </body>

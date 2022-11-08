@@ -64,6 +64,30 @@ ScrollReveal().reveal(".section-title", {
   reset: true,
 });
 
+ScrollReveal().reveal(".section-text h3", {
+  delay: 400,
+  origin: "top",
+  reset: true,
+});
+
+ScrollReveal().reveal(".section-text p", {
+  delay: 400,
+  origin: "bottom",
+  reset: true,
+});
+
+ScrollReveal().reveal(".work_container", {
+  delay: 500,
+  origin: "bottom",
+  reset: true,
+});
+
+ScrollReveal().reveal(".btn-contact_open", {
+  delay: 400,
+  origin: "bottom",
+  reset: false,
+});
+
 // ScrollReveal().reveal(".section-frame img", {
 //   delay: 300,
 //   distance: "0px",
@@ -235,4 +259,116 @@ $(".nav-link").click(function () {
   nav_item_5
     .removeClass("slide-in-nav-item-delay-4")
     .addClass("slide-in-nav-item-delay-4-reverse");
+});
+
+// Active Link Work
+const linkWork = document.querySelectorAll(".work_item");
+
+function activeWork() {
+  linkWork.forEach((l) => l.classList.remove("active_work"));
+  this.classList.add("active_work");
+}
+
+linkWork.forEach((l) => l.addEventListener("click", activeWork));
+
+// Popup PORTFOLIO
+function toggleProjectPopup() {
+  document.querySelector(".project_popup").classList.toggle("open");
+}
+
+function projectItemDetails(projectItem) {
+  document.querySelector(".pp_thumbnail img").src =
+    projectItem.querySelector(".work_img").src;
+
+  document.querySelector(".project_popup-subtitle span").innerHTML =
+    projectItem.querySelector(".work_title").innerHTML;
+
+  document.querySelector(".project_popup-body").innerHTML =
+    projectItem.querySelector(".project_item-details").innerHTML;
+}
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("work_button")) {
+    toggleProjectPopup();
+    projectItemDetails(e.target.parentElement);
+  }
+});
+
+document
+  .querySelector(".project_popup-close")
+  .addEventListener("click", toggleProjectPopup);
+
+// Popup Contact
+function toggleContactPopup() {
+  document.querySelector(".contact_popup").classList.toggle("open");
+}
+
+document
+  .querySelector(".btn-contact_open")
+  .addEventListener("click", toggleContactPopup);
+
+document
+  .querySelector(".contact_popup-close")
+  .addEventListener("click", toggleContactPopup);
+
+// Swiper PORTFOLIO
+let swiper = new Swiper(".work_container", {
+  spaceBetween: 24,
+  // loop: true,
+  gradCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+  },
+});
+
+// Swiper Terms of Use
+let swiperTOU = new Swiper(".services_container", {
+  spaceBetween: 24,
+  // loop: true,
+  gradCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+  },
+});
+
+const modalViews = document.querySelectorAll(".services_modal");
+modalBtns = document.querySelectorAll(".services_button");
+modalClose = document.querySelectorAll(".services_modal-close");
+
+let modal = function (modalClick) {
+  modalViews[modalClick].classList.add("avtive-modal");
+};
+
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
+
+modalClose.forEach((modalClose) => {
+  modalClose.addEventListener("click", () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove("avtive-modal");
+    });
+  });
 });
