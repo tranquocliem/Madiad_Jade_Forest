@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 0.60rem;
+    background-color: #56556d;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3b3a4a;
+    border-radius: 0.5rem;
+}
+
 html,
 body {
     font-family: 'Poppins', sans-serif;
@@ -488,6 +500,26 @@ Burger king
     position: relative;
     height: 100vh;
     overflow: hidden;
+
+}
+
+.section:nth-child(2) {
+    border-top: 5px solid rgba(63, 63, 63, 0.638);
+}
+
+.section:nth-child(3) {
+    border-top: 5px solid rgba(63, 63, 63, 0.638);
+}
+
+.section:nth-child(4) {
+    border-top: 5px solid rgba(63, 63, 63, 0.638);
+}
+
+.section:nth-child(5) {
+    border-top: 5px solid rgba(63, 63, 63, 0.638);
+}
+
+.section:nth-child(6) {
     border-top: 5px solid rgba(63, 63, 63, 0.638);
 }
 
