@@ -898,6 +898,36 @@ Burger king
     .section-frame .frame5 {
         display: none;
     }
+
+    .section-text p {
+        width: 300px;
+    }
+}
+
+@media (max-width:475px) {
+    .section-text h3 {
+        font-size: 4vw;
+        width: 100%;
+        height: auto;
+    }
+
+    .section-text p {
+        top: 400px;
+    }
+}
+
+@media (max-width:300px) {
+    .section-text p {
+        top: 365px;
+        font-size: 9px;
+        width: 200px;
+    }
+}
+
+@media (max-width:290px) {
+    .contact_popup-close {
+        left: 156px;
+    }
 }
 
 @media (max-width:402px) {
@@ -1209,7 +1239,7 @@ textarea {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    z-index: 999;
+    z-index: 9999;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
