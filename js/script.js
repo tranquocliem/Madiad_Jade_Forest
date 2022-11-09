@@ -58,6 +58,12 @@ ScrollReveal().reveal(".cloud3", {
   reset: true,
 });
 
+ScrollReveal().reveal(".btn_intro_video", {
+  delay: 300,
+  origin: "bottom",
+  reset: true,
+});
+
 ScrollReveal().reveal(".section-title", {
   delay: 300,
   origin: "left",
@@ -385,15 +391,30 @@ function scrollFunction() {
   }
 }
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
 toTop.addEventListener("click", topFunction);
+
+// Watch Intro
+let video = document.querySelector("video");
+const btnWatchIntro = document.querySelector(".btn_intro_video");
+const videoIntro = document.querySelector(".video_intro");
+const closeIntro = document.querySelector(".close_video_intro");
+
+btnWatchIntro.addEventListener("click", () => {
+  videoIntro.classList.toggle("active_video_intro");
+  video.play();
+  video.currentTime = 0;
+});
+closeIntro.addEventListener("click", () => {
+  videoIntro.classList.toggle("active_video_intro");
+  video.pause();
+  video.currentTime = 0;
+});
