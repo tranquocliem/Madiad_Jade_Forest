@@ -686,6 +686,7 @@ Burger king
     left: 0;
     top: 0;
     background: linear-gradient(0deg, #FFFFDB 36.02%, #FBFEDB 47.52%, #EDFCDD 60.03%, #D8F7DF 73.05%, #B9F2E1 86.39%, #92EAE5 99.87%, #92EAE5 100%);
+    background: #063347;
     /* user-select: none;
     pointer-events: none; */
     /* background-image: url("./img/Background.svg");
@@ -843,6 +844,12 @@ Burger king
     }
 }
 
+@media (max-width:827px) {
+    .project_popup-inner {
+        margin-top: 30px;
+    }
+}
+
 @media (max-width:800px) {
     .home .logo {
         margin-top: 0;
@@ -863,6 +870,18 @@ Burger king
     }
 }
 
+@media (max-width:753px) {
+    .project_popup-close {
+        left: 25px;
+    }
+}
+
+@media (max-width:724px) {
+    .project_popup-inner {
+        margin-top: 60px;
+    }
+}
+
 @media (max-width:710px) {
     .home .logo {
         margin-top: 0;
@@ -874,6 +893,18 @@ Burger king
     }
 }
 
+@media (max-width:652px) {
+    .project_popup-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project_popup-img {
+        display: none;
+    }
+}
+
 @media (max-width:648px) {
     .home .sun {
         padding-top: 50px;
@@ -881,6 +912,18 @@ Burger king
 
     .home .title {
         font-size: 50px;
+    }
+}
+
+@media (max-height:625px) {
+    .project_popup-inner {
+        margin-top: 50px;
+        padding: 0.8rem !important;
+    }
+
+    .project_popup-close {
+        top: 0 !important;
+        right: 1rem !important;
     }
 }
 
@@ -910,6 +953,13 @@ Burger king
 
     .section-text p {
         font-size: 10px;
+    }
+}
+
+@media (max-width:730px) and (max-height: 590px) {
+    .services_modal-content {
+        margin-top: 80px;
+        padding: 1rem !important;
     }
 }
 
@@ -948,6 +998,66 @@ Burger king
     }
 }
 
+@media (max-width:442px) {
+    .services_modal-content {
+        margin-top: 50px;
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width:400px) {
+    .services_modal-close {
+        top: -5px !important;
+        right: 0.5rem !important;
+    }
+}
+
+@media (max-width:406px) {
+    .project_popup-inner {
+        padding: 1rem !important;
+    }
+
+    .project_popup-img {
+        display: none;
+    }
+}
+
+@media (max-width:355px) {
+    .services_modal-title {
+        font-size: 0.8rem !important;
+    }
+
+    .services_modal-description {
+        font-size: 0.575rem !important;
+    }
+
+    .services_modal-info {
+        font-size: .575rem !important;
+    }
+}
+
+@media (max-width:320px) {
+    .details_title {
+        font-size: .875rem !important;
+    }
+
+    .project_popup-subtitle {
+        font-size: .675rem !important;
+    }
+
+    .details_description {
+        font-size: .575rem !important;
+    }
+
+    .details_info li {
+        font-size: .575rem !important;
+    }
+
+    .project_popup-img {
+        display: none;
+    }
+}
+
 @media (max-width:300px) {
     .section-text p {
         top: 365px;
@@ -959,6 +1069,25 @@ Burger king
 @media (max-width:290px) {
     .contact_popup-close {
         left: 156px;
+    }
+}
+
+@media (max-width:270px) {
+    .services_modal-title {
+        font-size: 0.575rem !important;
+    }
+
+    .services_modal-description {
+        font-size: 0.4rem !important;
+    }
+
+    .services_modal-info {
+        font-size: .4rem !important;
+    }
+
+    .services_modal-close {
+        top: 1px !important;
+        font-size: 0.8rem !important;
     }
 }
 
