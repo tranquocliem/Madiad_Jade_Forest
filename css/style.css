@@ -1733,3 +1733,170 @@ textarea {
     background-color: #555;
     opacity: 1;
 }
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #063347;
+    border-top: 5px solid rgba(63, 63, 63, 0.638);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container_footer .sec {
+    margin-right: 30px;
+}
+
+footer .container_footer .sec.abouttus {
+    width: 40%;
+}
+
+footer .container_footer h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container_footer h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #1b6bfc;
+}
+
+footer p {
+    color: rgb(182, 182, 182);
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: #1b6bfc;
+}
+
+.sci li a .icon_social {
+    color: #fff;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+    width: 25%;
+}
+
+.quicklinks ul li {
+    list-style: none;
+}
+
+.quicklinks ul li a {
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks ul li a:hover {
+    color: #1b6bfc;
+}
+
+.footer_contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.footer_contact .footer_contact_info {
+    position: relative;
+}
+
+.footer_contact .footer_contact_info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.footer_contact .footer_contact_info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer_contact .footer_contact_info li span {
+    color: rgb(182, 182, 182);
+}
+
+.footer_contact .footer_contact_info li a {
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+}
+
+.footer_contact .footer_contact_info li a:hover {
+    color: #1b6bfc;
+}
+
+.copyright {
+    width: 100%;
+    background: #03202c;
+    color: rgb(182, 182, 182);
+    text-align: center;
+    padding: 8px 100px;
+}
+
+@media (max-width:991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container_footer {
+        flex-direction: column;
+    }
+
+    footer .container_footer .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container_footer .sec.abouttus,
+    .quicklinks,
+    .footer_contact {
+        width: 100%;
+    }
+
+    .copyright {
+        padding: 8px 40px;
+    }
+}
